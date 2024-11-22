@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body {
+  color: #000;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h2 {
+  margin-bottom: 35px;
+  font-size: 38px;
+  line-height: 1.2;
+}
+
+h2 span {
+  color: #E40065;
+}
+
+.inner {
+  max-width: 1170px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lead dt {
+  margin-bottom: 20px;
+}
+
+.lead dd {
+  font-family: Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+
+/* header */
+header {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  padding: 35px 0;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+nav a {
+  color: #000;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+nav .active {
+  color: #E40065;
+}
+
+/* about */
+.about {
+  padding-top: 200px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 56px;
+}
+
+.about p {
+  margin-bottom: 60px;
+}
+
+/* works */
+.works {
+  margin-bottom: 100px;
+}
+
+.works article {
+  position: relative;
+  margin-top: 60px;
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #000;
+}
+
+.info h3 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.info p {
+  font-size: 12px;
+}
+
+/* project */
+.project {
+  margin-bottom: 100px;
+}
+
+.project article {
+  margin-top: 60px;
+}
+
+.project .photo {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.project h2 {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 5px 10px;
+  background-color: #E40065;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+/* footer */
+footer {
+  padding: 80px 0;
+  background-color: #2F2F2F;
+  text-align: center;
+}
+
+footer small {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (min-width:640px) {
+  nav {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .allpost {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .works article {
+    width: 31.62%;
+  }
+
+  .project article {
+    width: 47.86%;
+  }
+}

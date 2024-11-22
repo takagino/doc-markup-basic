@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.5;
+  letter-spacing: 0;
+  background-color: #F0F0F0;
+}
+
+.inner {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  margin: 0 0 40px;
+  font-size: 24px;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+/* header */
+header {
+  margin: 50px 0;
+}
+
+/* main */
+.mv {
+  margin-bottom: 100px;
+}
+
+.rooms {
+  margin-bottom: 100px;
+}
+
+.rooms .pic {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.rooms ul {
+  padding-left: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.rooms li {
+  margin: 15px 0;
+  padding-left: 36px;
+  background: url(./images/ico_check.png) no-repeat center left;
+}
+
+.testimonials {
+  margin-bottom: 100px;
+  padding: 50px;
+  background: #fff url(./images/bg_logo.png) no-repeat right 37px bottom 33px;
+  text-align: center;
+}
+
+.testimonials dt {
+  margin: 35px 0 50px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* footer */
+footer {
+  min-width: 900px;
+  padding: 60px 0;
+  background-color: #000;
+  text-align: right;
+  color: #fff;
+}
+
+.copy {
+  margin: 0;
+}

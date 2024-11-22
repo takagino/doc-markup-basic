@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+body{
+  color: #404040;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+h2{
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inner{
+  max-width: 1200px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+header ul{
+  display: flex;
+}
+
+header li{
+  margin-left: 20px;
+}
+
+header a{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header .active{
+  color: #985E5B;
+}
+
+/* footer */
+footer{
+  padding: 40px 0;
+  background-color: #EDEFF2;
+  text-align: center;
+}
+
+footer small{
+  display: block;
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+/* about */
+.about{
+  margin-bottom: 100px;
+  padding: 400px 0 100px;
+  background: url(./images/pic_main.png) no-repeat center/cover;
+  color: #fff;
+  text-align: right;
+}
+
+.about dt{
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about dd{
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* services */
+.services{
+  margin-bottom: 100px;
+}
+
+.services article{
+  margin-bottom: 80px;
+}
+
+article img{
+  margin-bottom: 30px;
+}
+
+article a{
+  display: block;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: auto;
+  padding: 18px;
+  background-color: #985E5B;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+/* information */
+.information{
+  margin-bottom: 100px;
+}
+
+.information li{
+  margin-bottom: 20px;
+}
+
+/* tablet表示（640px以上） */
+@media (min-width:640px){
+  footer .inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer small{
+    margin-top: 0;
+  }
+
+  .contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services{
+    width: 58.3%;
+  }
+
+  .allpost{
+    margin-bottom: -80px;
+  }
+
+  article a{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .information{
+    width: 33.3%;
+  }
+}
+
+/* pc表示（960px以上） */
+@media (min-width:960px){
+  .services{
+    margin-bottom: 160px;
+  }
+
+  .allpost{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -80px;
+  }
+
+  .allpost article{
+    width: 47.14%;
+  }
+}
