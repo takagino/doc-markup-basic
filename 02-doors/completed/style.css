@@ -21,7 +21,7 @@ h2 {
   color: #fff;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   letter-spacing: 0.05em;
 }
@@ -37,14 +37,14 @@ li {
   border-bottom: 1px solid #bbb;
   color: #000;
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
 }
 
 p {
   color: #000;
   font-size: 16px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   line-height: 1.5;
   text-align: center;
 }
