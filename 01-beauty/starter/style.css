@@ -6,3 +6,10 @@ h2 {
     font-weight: normal;
     text-align: center;
 }
+
+.copy {
+    color: #000000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
