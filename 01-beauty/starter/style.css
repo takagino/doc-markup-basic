@@ -4,19 +4,21 @@ h2 {
     color: #000000;
     font-size: 48px;
     font-weight: normal;
-    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     letter-spacing: 0.1em;
+    text-align: center;
 }
 
 .copy {
     color: #000000;
     font-size: 12px;
     font-weight: bold;
-    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     /* 行の高さ / フォントサイズ */
     letter-spacing: 0;
     /* 文字間 / 1000 + em */
     /* 値が0の場合は単位が省略できる */
+    text-align: center;
 }
