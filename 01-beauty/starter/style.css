@@ -5,6 +5,8 @@ h2 {
     font-size: 48px;
     font-weight: normal;
     text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
 }
 
 .copy {
@@ -12,4 +14,9 @@ h2 {
     font-size: 12px;
     font-weight: bold;
     text-align: center;
+    line-height: 1.5;
+    /* 行の高さ / フォントサイズ */
+    letter-spacing: 0;
+    /* 文字間 / 1000 + em */
+    /* 値が0の場合は単位が省略できる */
 }
