@@ -33,6 +33,9 @@ p {
 }
 
 ul {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 0;
     /* ぽっちを消したらパディングも消す（セットで覚える）*/
     list-style-type: none;
