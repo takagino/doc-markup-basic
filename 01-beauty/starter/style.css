@@ -33,10 +33,17 @@ p {
 }
 
 ul {
+    padding-left: 0;
+    /* ぽっちを消したらパディングも消す（セットで覚える）*/
     list-style-type: none;
 }
 
 li {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    /* solid:直線、dashed:破線、dotted:点線 */
+
     color: #000000;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
