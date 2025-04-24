@@ -17,25 +17,23 @@ h2 {
     text-align: center;
 }
 
-.info {
+p {
     color: #000000;
-    font-size: 12px;
-    font-weight: normal;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.5;
-    letter-spacing: 0;
-    text-align: right;
-}
-
-.copy {
-    color: #000000;
-    font-size: 12px;
-    font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     /* 行の高さ / フォントサイズ */
     letter-spacing: 0;
     /* 文字間 / 1000 + em */
     /* 値が0の場合は単位が省略できる */
+}
+
+.info {
+    font-size: 12px;
+    text-align: right;
+}
+
+.copy {
+    font-size: 12px;
+    font-weight: bold;
     text-align: center;
 }
