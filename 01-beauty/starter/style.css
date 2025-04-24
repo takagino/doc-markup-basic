@@ -33,9 +33,6 @@ p {
 }
 
 ul {
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 0;
     /* ぽっちを消したらパディングも消す（セットで覚える）*/
     list-style-type: none;
@@ -52,6 +49,17 @@ li {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     letter-spacing: 0;
+}
+
+.wrapper {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voice {
+    padding: 50px;
+    background-color: #F5F5F5;
 }
 
 .info {
