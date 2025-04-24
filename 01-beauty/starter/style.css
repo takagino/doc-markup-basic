@@ -19,12 +19,15 @@ h2 {
 
 p {
     color: #000000;
+    font-size: 16px;
+    /* ブラウザのディフォルトは16pxなので書く必要なし */
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     /* 行の高さ / フォントサイズ */
     letter-spacing: 0;
     /* 文字間 / 1000 + em */
     /* 値が0の場合は単位が省略できる */
+    text-align: center;
 }
 
 .info {
@@ -35,5 +38,4 @@ p {
 .copy {
     font-size: 12px;
     font-weight: bold;
-    text-align: center;
 }
