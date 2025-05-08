@@ -41,6 +41,11 @@ h3 {
     line-height: 1.5;
 }
 
+/* ディフォルトでマージンがついちゃうので、毎回消す */
+dd {
+    margin-left: 0;
+}
+
 a {
     color: #151D41;
     font-size: 14px;
@@ -65,4 +70,24 @@ a {
 .developement {
     background-color: #fff;
     padding: 40px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.name {
+    margin: 20px 0 10px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.copy {
+    margin: 100px 0 50px;
+    padding-top: 20px;
+    border-top: 3px solid #27DEBF;
+    font-size: 14px;
+    font-style: oblique;
+    text-align: right;
 }
