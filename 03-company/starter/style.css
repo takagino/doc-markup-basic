@@ -39,3 +39,15 @@ h2 {
     line-height: 1.2;
     text-align: center;
 }
+
+.graphics {
+    background-color: #27DEBF;
+    margin-bottom: 50px;
+    padding: 40px;
+    color: #fff;
+}
+
+.developement {
+    background-color: #fff;
+    padding: 40px;
+}
