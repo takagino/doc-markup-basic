@@ -9,6 +9,15 @@ body {
   letter-spacing: 0;
 }
 
+img {
+  vertical-align: middle;
+}
+
+a {
+  color: #202124;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 750px;
   margin-left: auto;
@@ -56,7 +65,7 @@ h3 {
   font-style: italic;
 }
 
-.trending .post{
+.trending .post {
   margin-bottom: 40px;
   background-color: #F6F6F6;
 }
