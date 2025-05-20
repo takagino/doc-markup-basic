@@ -69,3 +69,17 @@ h3 {
 .trending h3 {
     font-size: 18px;
 }
+
+.category {
+    margin: 0 0 20px;
+    color: #E5916B;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.time {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-style: italic;
+}
