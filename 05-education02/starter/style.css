@@ -34,3 +34,13 @@ footer {
 .copy {
     margin: 0;
 }
+
+.news .post {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px dotted #898989;
+}
+
+.trending .post {
+    background-color: #F6F6F6;
+}
