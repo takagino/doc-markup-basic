@@ -50,6 +50,12 @@ h2 {
     letter-spacing: 0.05em;
 }
 
+h3 {
+    margin: 0 0 10px;
+    color: #202124;
+    font-size: 20px;
+}
+
 .news .post {
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -58,4 +64,8 @@ h2 {
 
 .trending .post {
     background-color: #F6F6F6;
+}
+
+.trending h3 {
+    font-size: 18px;
 }
