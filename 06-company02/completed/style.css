@@ -1,106 +1,106 @@
 @charset "utf-8";
 
 body {
-    margin: 0;
-    color: #151D41;
-    font-size: 16px;
-    font-family: Helvetica, Arial, sans-serif;
-    line-height: 2;
-    letter-spacing: 0;
-    background-color: #F2F2F2;
+  margin: 0;
+  color: #151d41;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 2;
+  letter-spacing: 0;
+  background-color: #f2f2f2;
 }
 
 img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 dd {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-    color: #151D41;
-    text-decoration: none;
+  color: #151d41;
+  text-decoration: none;
 }
 
 .wrapper {
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
-    margin: 50px 0 70px;
-    text-align: center;
+  margin: 50px 0 70px;
+  text-align: center;
 }
 
 h1 {
-    line-height: 1;
+  line-height: 1;
 }
 
 footer {
-    margin: 100px 0 50PX;
-    padding-top: 20PX;
-    border-top: 3px solid #27DEBF;
-    text-align: right;
+  margin: 100px 0 50px;
+  padding-top: 20px;
+  border-top: 3px solid #27debf;
+  text-align: right;
 }
 
 .copy {
-    margin: 0;
-    font-size: 14px;
-    font-style: oblique;
+  margin: 0;
+  font-size: 14px;
+  font-style: oblique;
 }
 
 h2 {
-    margin: 0 0 20px;
-    color: #27DEBF;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 1.2;
-    text-align: center;
+  margin: 0 0 20px;
+  color: #27debf;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .lead {
-    margin: 0 0 50px;
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
+  margin: 0 0 50px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .services {
-    margin: 100px 0;
-}
-
-.services article {
-    margin-bottom: 50px;
-    padding: 40px;
+  margin: 100px 0;
 }
 
 .services h3 {
-    margin: 0 0 30px;
-    padding-bottom: 20px;
-    border-bottom: 3px dashed;
-    font-size: 24px;
-    line-height: 1.5;
+  margin: 0 0 30px;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.services article {
+  margin-bottom: 50px;
+  padding: 40px;
 }
 
 .graphics {
-    color: #fff;
-    background-color: #27DEBF;
+  color: #fff;
+  background-color: #27debf;
 }
 
 .developement {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .testimonials {
-    text-align: center;
+  text-align: center;
 }
 
 .name {
-    margin: 20px 0 10px;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.2;
+  margin: 20px 0 10px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
 }
