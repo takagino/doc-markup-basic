@@ -37,7 +37,12 @@ footer {
 }
 
 .mainvisual {
+    padding: 155px 0;
     background-color: #ddd;
+    background-image: url(./images/bg_mv.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .testimonials {
