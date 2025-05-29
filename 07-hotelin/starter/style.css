@@ -39,6 +39,19 @@ footer {
 .mainvisual {
     padding: 155px 0;
     background: url(./images/bg_mv.png) no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+.mainvisual h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.mainvisual p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
 }
 
 .rooms {
