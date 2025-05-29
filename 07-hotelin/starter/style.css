@@ -38,16 +38,28 @@ footer {
 
 .mainvisual {
     padding: 155px 0;
-    background-color: #ddd;
-    background-image: url(./images/bg_mv.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: url(./images/bg_mv.png) no-repeat center center/cover;
+}
+
+.rooms {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.rooms ul {
+    margin-top: 60px;
+    text-align: left;
+}
+
+.rooms li {
+    margin-bottom: 15px;
+    padding: 2px 0 2px 36px;
+    background: url(./images/ico_check.png) no-repeat;
 }
 
 .testimonials {
     padding: 80px 0;
-    background-color: #eee;
+    background: url(./images/bg_testimonials.png) no-repeat center center/cover;
 }
 
 .testimonials .inner {
