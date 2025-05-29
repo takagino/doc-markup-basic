@@ -47,8 +47,11 @@ footer {
 
 .testimonials .inner {
     padding: 50px;
-    background-color: #fff;
     text-align: center;
+    /* background-image: url(./images/bg_logo.png);
+    background-repeat: no-repeat;
+    background-position: right 35px bottom 35px; */
+    background: #fff url(./images/bg_logo.png) no-repeat right 35px bottom 35px;
 }
 
 .voice {
