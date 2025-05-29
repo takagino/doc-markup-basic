@@ -19,6 +19,10 @@ h2 {
     letter-spacing: 0.2em;
 }
 
+h2 span {
+    color: #f00;
+}
+
 .inner {
     width: 900px;
     margin-left: auto;
@@ -26,14 +30,14 @@ h2 {
 }
 
 header {
-    margin: 0 10px;
-    padding: 0 20px;
+    margin: 50px 0;
 }
 
 footer {
     padding: 60px 0;
     background-color: #000;
     color: #fff;
+    text-align: right;
 }
 
 .mainvisual {
@@ -52,6 +56,16 @@ footer {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.2em;
+}
+
+.btn {
+    width: 200px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px 50px;
+    background-color: #f00;
 }
 
 .rooms {
