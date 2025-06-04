@@ -20,21 +20,14 @@ img {
 
 /* header */
 header {
-  min-width: 800px;
-  background-color: #0864B1;
+  padding: 40px 0;
 }
 
 header .inner {
-  padding: 40px 0 80px;
-  background: url(./images/bg_header.png) no-repeat right center;
-}
-
-.top {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 120px;
 }
 
 nav ul {
@@ -46,13 +39,19 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: #0864B1;
   font-size: 16px;
   font-weight: bold;
 }
 
 .about {
   color: #fff;
+  background-color: #0864B1;
+}
+
+.about .inner {
+  padding: 80px 0;
+  background: url(./images/bg_about.png) no-repeat right center;
 }
 
 .about h2 {
