@@ -18,14 +18,28 @@ img {
     margin-right: auto;
 }
 
+header {
+    padding: 40px 0;
+}
+
 header .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header ul {
+.global ul {
     display: flex;
+}
+
+.global li {
+    margin-left: 30px;
+}
+
+.global a {
+    color: #0864B1;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 footer ul {
