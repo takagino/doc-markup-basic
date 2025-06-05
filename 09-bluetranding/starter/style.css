@@ -63,3 +63,15 @@ footer li {
 footer small {
     font-size: 12px;
 }
+
+.news .posts {
+    display: flex;
+    flex-wrap: wrap;
+    /* 横並びにした要素の幅を決めて折り返したい時に指定する */
+    justify-content: space-between;
+}
+
+.posts article {
+    width: 380px;
+    margin-bottom: 60px;
+}
