@@ -42,6 +42,24 @@ header .inner {
     font-weight: bold;
 }
 
+footer {
+    min-width: 800px;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+    background-color: #0864B1;
+}
+
 footer ul {
     display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+footer li {
+    margin: 0 5px;
+}
+
+footer small {
+    font-size: 12px;
 }
