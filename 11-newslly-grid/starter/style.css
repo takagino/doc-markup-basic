@@ -17,3 +17,33 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* fr (割合)　親要素の横幅に対して何対何か */
+    /* grid-template-columns: 200px 1fr; 　固定幅と可変幅の組み合わせ*/
+    /* grid-template-columns: repeat(4, 1fr); 同じ値を何回繰り返すか */
+
+    column-gap: 40px;
+    row-gap: 45px;
+    /*
+    gap: 40px 45px;
+    gap: 40px; ← columns-gapとrow-gap両方に適応される
+    */
+}
+
+/*
+Flexboxの場合
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts article{
+    width: 380px;
+    margin-bottom: 45px;
+}
+*/
