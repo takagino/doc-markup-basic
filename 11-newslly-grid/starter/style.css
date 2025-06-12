@@ -53,6 +53,29 @@ header {
     padding: 30px 0 50px;
 }
 
+header .inner {
+    display: grid;
+    /* grid-template-columns: auto auto; */
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+header nav {
+    /* justify-self: end; */
+    /* 横に並べた子要素をグリッドの中でどう配置するか */
+}
+
+.global ul {
+    display: grid;
+    /* grid-template-columns: repeat(4, auto); */
+    column-gap: 20px;
+    grid-auto-flow: column;
+    /* 子要素を全て並べたいとき */
+    grid-auto-columns: auto;
+    /* 子要素の幅を設定する auto（初期値）、px、1fr */
+}
+
 footer {
     padding: 100px 0 40px;
     background-color: #202124;
