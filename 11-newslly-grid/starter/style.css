@@ -47,3 +47,13 @@ Flexboxの場合
     margin-bottom: 45px;
 }
 */
+
+
+header {
+    padding: 30px 0 50px;
+}
+
+footer {
+    padding: 100px 0 40px;
+    background-color: #202124;
+}
