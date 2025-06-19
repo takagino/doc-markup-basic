@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.inner {
+  width: 87.5%;
+  /* 560px / 640px * 100 */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .inner {
+  background-color: #ddd;
+}
+
+.posts2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.posts2 article {
+  /* width: 380px; */
+  width: 47.5%;
+  /* 380px / 800px * 100 */
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* repeat(2, 1fr); */
+  column-gap: 5%;
+  /*
+    ブラウザサイズに合わせて可変したいとき「5%」
+    常に余白の幅を固定したい時は「40px」
+    */
+}

@@ -59,6 +59,7 @@ header .inner {
     justify-content: space-between;
     align-items: center;
     grid-auto-flow: column;
+    /* align-content: end; */
 }
 
 header nav {
