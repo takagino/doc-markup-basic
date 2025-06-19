@@ -25,11 +25,23 @@ img {
 
 header {
   padding: 40px 0;
+  text-align: center;
 }
 
 header .inner {
   display: grid;
   justify-content: center;
+  row-gap: 10px;
+}
+
+header h1 {
+  justify-self: center;
+}
+
+.global ul {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px;
 }
 
 .posts2 {
