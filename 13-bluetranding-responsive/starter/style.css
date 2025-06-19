@@ -93,13 +93,15 @@ header h1 {
   row-gap: 60px;
 }
 
-
-
 @media (640px<=width) {
   header .inner {
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .about h2 {
+    font-size: 42px;
   }
 
   .posts {
