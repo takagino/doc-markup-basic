@@ -44,6 +44,38 @@ header h1 {
   column-gap: 30px;
 }
 
+.about {
+  background-color: #0864B1;
+  color: #fff;
+}
+
+.about .inner {
+  padding: 80px 0;
+  background: url(./images/bg_about.png) no-repeat right center;
+}
+
+.about h2 {
+  margin-bottom: 60px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about p {
+  font-size: 18px;
+}
+
+.about a {
+  display: block;
+  width: 240px;
+  margin-top: 40px;
+  padding: 20px 30px;
+  background-color: #fff;
+  color: #0864B1;
+  font-weight: bold;
+  text-align: center;
+}
+
 .posts2 {
   display: flex;
   flex-wrap: wrap;
