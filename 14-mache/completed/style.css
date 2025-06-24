@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{
+body {
   color: #5A5A5A;
   font-size: 14px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,75 +9,74 @@ body{
   background-color: #F4F4F4;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
-.inner{
-  max-width: 900px;
+.inner {
   width: 87.5%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* header*/
-header{
+header {
   padding: 40px 0;
   background-color: #000;
   color: #fff;
 }
 
-header .inner{
-  display: flex;
+header .inner {
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
 }
 
-header ul{
-  display: flex;
+header ul {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
 }
 
-header li{
-  margin-left: 20px;
-}
-
-header a{
+header a {
   font-weight: bold;
 }
 
-header .active{
+header .active {
   color: #ED145B;
 }
 
 /* footer */
-footer{
+footer {
   padding: 60px 0 160px;
   background-color: #000;
   color: #fff;
 }
 
 /* about */
-.about{
+.about {
   margin-bottom: 80px;
   padding: 150px 0;
   background: url(./images/bg_mainvisual.png) no-repeat center/cover;
   color: #fff;
 }
 
-.about h2{
+.about h2 {
   margin-bottom: 40px;
   font-size: 46px;
   font-weight: bold;
   line-height: 1.2;
 }
 
-h2 span{
+h2 span {
   color: #ED145B;
 }
 
-.about a{
+.about a {
   display: inline-block;
   width: 200px;
   margin-top: 80px;
@@ -90,7 +89,11 @@ h2 span{
 }
 
 /* updates */
-.updates h2{
+.updates {
+  margin-bottom: 80px;
+}
+
+.updates h2 {
   margin-bottom: 45px;
   color: #2B2B2B;
   font-size: 38px;
@@ -99,11 +102,12 @@ h2 span{
   text-align: center;
 }
 
-.updates article{
-  margin-bottom: 80px;
+.allpost {
+  display: grid;
+  gap: 60px 80px;
 }
 
-.updates h3{
+.updates h3 {
   margin: 20px 0;
   color: #2B2B2B;
   font-size: 16px;
@@ -112,23 +116,17 @@ h2 span{
 }
 
 /* pc表示（640px以上） */
-@media (min-width:640px){
-  .about{
+@media (min-width:640px) {
+  .about {
     padding: 180px 0;
     text-align: center;
   }
 
-  .updates h2{
+  .updates h2 {
     margin-bottom: 50px;
   }
 
-  .allpost{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .allpost article{
-    width: 28.9%;
+  .allpost {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
