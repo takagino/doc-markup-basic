@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-body{
+body {
   color: #404040;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
@@ -8,67 +8,77 @@ body{
   letter-spacing: 0.1em;
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
-h2{
+h2 {
   margin-bottom: 40px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #ddd;
   font-size: 18px;
   font-weight: bold;
 }
 
-.inner{
-  max-width: 1200px;
+.inner {
   width: 87.5%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* header */
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {
   padding: 40px 0;
 }
 
-header ul{
-  display: flex;
+header .inner {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header li{
-  margin-left: 20px;
+header ul {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
 }
 
-header a{
+header a {
   font-size: 12px;
   font-weight: bold;
 }
 
-header .active{
+header .current {
   color: #985E5B;
 }
 
 /* footer */
-footer{
+footer {
   padding: 40px 0;
   background-color: #EDEFF2;
   text-align: center;
 }
 
-footer small{
-  display: block;
-  margin-top: 25px;
+footer .inner {
+  display: grid;
+  row-gap: 25px;
+  justify-content: center;
+}
+
+footer img {
+  justify-self: center;
+}
+
+footer small {
   font-size: 12px;
 }
 
 /* about */
-.about{
+.mainvisual {
   margin-bottom: 100px;
   padding: 400px 0 100px;
   background: url(./images/pic_main.png) no-repeat center/cover;
@@ -76,32 +86,40 @@ footer small{
   text-align: right;
 }
 
-.about dt{
+.mainvisual h2 {
   margin-bottom: 20px;
+  border: 0;
   font-size: 50px;
   font-weight: bold;
   line-height: 1.2;
 }
 
-.about dd{
+.mainvisual p {
   font-size: 18px;
   line-height: 1.2;
 }
 
+/* contents */
+.contents {
+  display: grid;
+}
+
 /* services */
-.services{
+.services {
   margin-bottom: 100px;
 }
 
-.services article{
-  margin-bottom: 80px;
+.services .posts {
+  display: grid;
+  column-gap: 40px;
+  row-gap: 80px;
 }
 
-article img{
+article img {
   margin-bottom: 30px;
 }
 
-article a{
+article a {
   display: block;
   width: 300px;
   margin-top: 50px;
@@ -115,64 +133,48 @@ article a{
 }
 
 /* information */
-.information{
+.information {
   margin-bottom: 100px;
 }
 
-.information li{
+.information li {
   margin-bottom: 20px;
 }
 
 /* tablet表示（640px以上） */
-@media (min-width:640px){
-  footer .inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer small{
-    margin-top: 0;
-  }
-
-  .contents{
-    display: flex;
-    flex-wrap: wrap;
+@media (640px<=width) {
+  footer .inner {
+    grid-auto-flow: column;
     justify-content: space-between;
   }
 
-  .services{
-    width: 58.3%;
+  .contents {
+    grid-template-columns: 58% 33%;
+    justify-content: space-between;
   }
 
-  .allpost{
-    margin-bottom: -80px;
-  }
-
-  article a{
+  article a {
     width: 100%;
     margin-top: 30px;
-  }
-
-  .information{
-    width: 33.3%;
   }
 }
 
 /* pc表示（960px以上） */
-@media (min-width:960px){
-  .services{
+@media (960px<=width) {
+
+  .contents {
     margin-bottom: 160px;
   }
 
-  .allpost{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: -80px;
+  .services {
+    margin-bottom: 0;
   }
 
-  .allpost article{
-    width: 47.14%;
+  .information {
+    margin-bottom: 0;
+  }
+
+  .posts {
+    grid-template-columns: 1fr 1fr;
   }
 }
