@@ -46,7 +46,7 @@ header a {
   font-weight: bold;
 }
 
-header .active {
+header .current {
   color: #ED145B;
 }
 
@@ -58,14 +58,14 @@ footer {
 }
 
 /* about */
-.about {
+.mainvisual {
   margin-bottom: 80px;
   padding: 150px 0;
   background: url(./images/bg_mainvisual.png) no-repeat center/cover;
   color: #fff;
 }
 
-.about h2 {
+.mainvisual h2 {
   margin-bottom: 40px;
   font-size: 46px;
   font-weight: bold;
@@ -76,7 +76,7 @@ h2 span {
   color: #ED145B;
 }
 
-.about a {
+.mainvisual a {
   display: inline-block;
   width: 200px;
   margin-top: 80px;
@@ -94,7 +94,7 @@ h2 span {
 }
 
 .updates h2 {
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   color: #2B2B2B;
   font-size: 38px;
   font-weight: bold;
@@ -102,7 +102,7 @@ h2 span {
   text-align: center;
 }
 
-.allpost {
+.posts {
   display: grid;
   gap: 60px 80px;
 }
@@ -116,17 +116,13 @@ h2 span {
 }
 
 /* pc表示（640px以上） */
-@media (min-width:640px) {
-  .about {
+@media (640px < width) {
+  .mainvisual {
     padding: 180px 0;
     text-align: center;
   }
 
-  .updates h2 {
-    margin-bottom: 50px;
-  }
-
-  .allpost {
+  .posts {
     grid-template-columns: repeat(3, 1fr);
   }
 }
