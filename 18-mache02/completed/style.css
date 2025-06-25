@@ -53,7 +53,8 @@ header {
 }
 
 header .inner {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -63,11 +64,9 @@ nav {
 }
 
 nav ul {
-  display: flex;
-}
-
-nav li {
-  margin-left: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 20px;
 }
 
 nav a {
@@ -105,8 +104,9 @@ nav .active {
   background-color: #F4F4F4;
 }
 
-.free .pic {
-  margin-bottom: 60px;
+.free .inner {
+  display: grid;
+  row-gap: 60px;
 }
 
 .free .btn {
@@ -118,9 +118,13 @@ nav .active {
   padding: 100px 0;
 }
 
+.updates .posts {
+  display: grid;
+  row-gap: 40px;
+}
+
 .updates article {
   position: relative;
-  margin-top: 40px;
   background-color: #F4F4F4;
 }
 
@@ -176,15 +180,12 @@ footer small {
   }
 
   .free .inner {
-    display: flex;
-    flex-direction: row-reverse;
+    grid-template-columns: 41.23% 45.61%;
     justify-content: space-between;
     align-items: center;
   }
 
   .free .pic {
-    width: 45.61%;
-    margin-bottom: 0;
     background-color: #fff;
   }
 
@@ -194,20 +195,12 @@ footer small {
     right: 25px;
   }
 
-  .free .contents {
-    width: 41.23%;
-  }
-
   .updates h2 {
     text-align: center;
   }
 
   .updates .posts {
-    display: flex;
+    grid-template-columns: repeat(3, 31.58%);
     justify-content: space-between;
-  }
-
-  .updates article {
-    width: 31.58%;
   }
 }
