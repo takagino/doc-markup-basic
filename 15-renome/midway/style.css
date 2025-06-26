@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+body {
+  color: #404040;
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+img {}
+
+h2 {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inner {}
+
+/* header */
+header {
+  padding: 40px 0;
+}
+
+header .inner {}
+
+header ul {}
+
+header a {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+header .current {
+  color: #985E5B;
+}
+
+/* footer */
+footer {
+  padding: 40px 0;
+  background-color: #EDEFF2;
+  text-align: center;
+}
+
+footer .inner {}
+
+footer img {}
+
+footer small {
+  font-size: 12px;
+}
+
+/* about */
+.mainvisual {
+  margin-bottom: 100px;
+  padding: 400px 0 100px;
+  background: url(./images/pic_main.png) no-repeat center/cover;
+  color: #fff;
+  text-align: right;
+}
+
+.mainvisual h2 {
+  margin-bottom: 20px;
+  border: 0;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.mainvisual p {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+/* contents */
+.contents {}
+
+/* services */
+.services {
+  margin-bottom: 100px;
+}
+
+.services .posts {}
+
+article img {
+  margin-bottom: 30px;
+}
+
+article a {}
+
+/* information */
+.information {
+  margin-bottom: 100px;
+}
+
+.information li {
+  margin-bottom: 20px;
+}
+
+/* tablet表示（640px以上） */
+@media (640px<=width) {
+  footer .inner {}
+
+  .contents {}
+
+  article a {}
+}
+
+/* pc表示（960px以上） */
+@media (960px<=width) {
+
+  .contents {
+    margin-bottom: 160px;
+  }
+
+  .services {
+    margin-bottom: 0;
+  }
+
+  .information {
+    margin-bottom: 0;
+  }
+
+  .posts {}
+}
