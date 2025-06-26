@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+body {}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.inner {}
+
+@media (640px <=width) {}
