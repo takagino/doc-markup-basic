@@ -25,6 +25,24 @@ header {
     background-color: #000;
     position: fixed;
     width: 100%;
+    padding: 25px 0;
+}
+
+header .inner {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global ul {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+}
+
+.global a {
+    color: #fff;
 }
 
 .template {
