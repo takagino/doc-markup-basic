@@ -35,7 +35,7 @@ header {
   left: 0;
   width: 100%;
   padding: 40px 0;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0.6);
   z-index: 9999;
 }
 
@@ -46,7 +46,7 @@ header .inner {
   align-items: center;
 }
 
-header h1{
+header h1 {
   font-size: 26px;
   font-weight: bold;
   line-height: 1;
@@ -86,18 +86,18 @@ footer {
   color: #fff;
 }
 
-footer dl{
+footer dl {
   margin-bottom: 40px;
 }
 
-footer dt{
+footer dt {
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2;
 }
 
-footer small{
+footer small {
   font-weight: bold;
 }
 
@@ -111,10 +111,10 @@ footer small{
 .mainvisual-text {
   max-width: 480px;
   padding: 65px 60px;
-  background-color: rgba(255, 255, 255, .6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.mainvisual h2{
+.mainvisual h2 {
   margin-bottom: 25px;
 }
 
@@ -123,7 +123,7 @@ footer small{
   margin-bottom: 120px;
 }
 
-.about .posts{
+.about .posts {
   display: grid;
   row-gap: 50px;
 }
@@ -141,7 +141,7 @@ footer small{
   line-height: 1.2;
 }
 
-.about .btn{
+.about .btn {
   display: block;
   width: 200px;
   margin: 50px auto 0;
@@ -171,7 +171,7 @@ footer small{
   position: relative;
 }
 
-.item dl{
+.item dl {
   margin-bottom: 30px;
 }
 
@@ -190,7 +190,7 @@ footer small{
 
 @media (740px<=width) {
 
-  h2{
+  h2 {
     text-align: center;
   }
 
