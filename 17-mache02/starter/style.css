@@ -30,6 +30,9 @@ header {
     padding: 25px 0;
     /* opacity: 0.8; */
     /* opacity（透明度）：0 - 1、80%の時は0.8 */
+    z-index: 999;
+    /* z-indexはpositionとセットで使用する */
+    /* どの要素よりも常に前面に表示したい時は、999などの大きい数字を指定する */
 }
 
 header .inner {
@@ -37,6 +40,10 @@ header .inner {
     grid-auto-flow: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.global {
+    display: none;
 }
 
 .global ul {
@@ -81,4 +88,16 @@ header .inner {
     right: -20px;
 }
 
-@media (640px <=width) {}
+@media (640px <=width) {
+    header {
+        padding: 40px 0;
+    }
+
+    .global {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+}
