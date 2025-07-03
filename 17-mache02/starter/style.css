@@ -14,6 +14,14 @@ img {
     vertical-align: middle;
 }
 
+h2 {
+    margin-bottom: 40px;
+    color: #2B2B2B;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
 .inner {
     max-width: 1140px;
     width: 90.625%;
@@ -69,6 +77,15 @@ header .inner {
 
 /* footer
 -------------------- */
+footer {
+    padding: 60px 0 160px;
+    background-color: #2B2B2B;
+}
+
+footer small {
+    color: #fff;
+    font-size: 14px;
+}
 
 /* main
 -------------------- */
@@ -80,23 +97,58 @@ header .inner {
     color: #fff;
 }
 
+.mainvisual h2 {
+    color: #fff;
+    font-size: 46px;
+}
+
+.mainvisual h2 span {
+    color: #ED145B;
+}
+
+.mainvisual .btn {
+    margin-top: 100px;
+}
+
 /* template */
 .template {
+    padding: 100px 0;
     background-color: #F4F4F4;
+}
+
+.template .inner {
+    display: grid;
+    row-gap: 60px;
 }
 
 .template .pic {
     background-color: #fff;
 }
 
-.template img {
-    position: relative;
-    right: 25px;
-    bottom: 25px;
+/* updates */
+.updates {
+    padding: 100px 0;
+}
+
+.updates .posts {
+    display: grid;
+    row-gap: 40px;
 }
 
 .updates article {
     position: relative;
+    background-color: #F4F4F4;
+}
+
+.updates .text {
+    padding: 25px 20px 35px;
+}
+
+.updates h3 {
+    margin-bottom: 20px;
+    color: #2B2B2B;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .hot {
@@ -116,5 +168,23 @@ header .inner {
 
     .menu {
         display: none;
+    }
+
+    .template .inner {
+        grid-template-columns: 470fr 580fr;
+        column-gap: 8%;
+        align-items: end;
+        /* flexboxやgridで横に並べた時に、高さが伸びてしまう。align-itemsを設定することで直る */
+    }
+
+    .template img {
+        position: relative;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .updates .posts {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2.5%;
     }
 }
