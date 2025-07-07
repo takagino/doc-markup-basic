@@ -11,7 +11,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 h2 {
@@ -23,11 +23,15 @@ h2 {
 }
 
 h2::before {
-  content: "NEWS";
+  content: "";
   display: block;
   margin-bottom: 15px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.news h2::before {
+  content: "NEWS";
 }
 
 .works h2::before {
@@ -53,7 +57,8 @@ h2::after {
   margin-right: auto;
 }
 
-/* header */
+/* header
+-------------------- */
 header {
   position: fixed;
   z-index: 9999;
@@ -63,17 +68,16 @@ header {
 }
 
 header .inner {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   justify-content: space-between;
   align-items: center;
 }
 
 nav ul {
-   display: flex;
-}
-
-nav li {
-  margin-left: 30px;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 30px;
 }
 
 nav a {
@@ -87,48 +91,43 @@ nav a:hover {
   color: #E40065;
 }
 
-/* main */
+/* header
+-------------------- */
+/* news */
 .news {
   margin-bottom: 100px;
   padding-top: 180px;
 }
 
-.news dl {
+.news-list {
   max-width: 600px;
   margin: auto;
 }
 
-.news .item {
-  display: flex;
+.news-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  column-gap: 40px;
   padding: 25px;
 }
 
-.news .item:nth-child(even) {
+.news-item:nth-child(even) {
   background-color: #f7f7f7;
 }
 
-.news dt {
-  width: 80px;
-  margin-right: 40px;
+.news-item dt {
   font-weight: bold;
 }
 
-.news dd {
-  flex: 1;
-}
-
+/* works */
 .works {
   margin-bottom: 100px;
 }
 
-.allpost {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.works article {
-  width: 47.86%;
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
 }
 
 .works .pic {
@@ -150,28 +149,33 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* voice */
 .voice {
   margin-bottom: 100px;
 }
 
 .voice article {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 400fr 700fr;
   align-items: center;
+  column-gap: 70px;
   margin-bottom: 60px;
 }
 
 .voice article:nth-child(even) {
-  flex-direction: row-reverse;
+  grid-template-columns: 700fr 400fr;
 }
 
-.voice img{
-  width: 34.19%;
+.voice article:nth-child(even) .text {
+  order: 1;
+}
+
+.voice article:nth-child(even) img {
+  order: 2;
 }
 
 .voice .text {
   position: relative;
-  width: 59.82%;
   padding: 50px;
   background-color: #f7f7f7;
   border-radius: 30px;
