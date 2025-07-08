@@ -127,6 +127,31 @@ header .inner {
     background-color: #F7F7F7;
 }
 
+/* works */
+.works .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.works .pic {
+    position: relative;
+}
+
+.works .new::after {
+    content: "NEW";
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #E40065;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 /* p::first-letter {
     color: #f00;
     font-size: 24px;
