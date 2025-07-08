@@ -53,3 +53,26 @@ header .inner {
 
 /* main
 -----------------------*/
+/* news */
+.news {
+    margin: 180px 0 100px;
+}
+
+.news-list {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    column-gap: 40px;
+    padding: 25px;
+    background-color: #ddd;
+}
+
+.news-item dt {
+    font-weight: bold;
+}
