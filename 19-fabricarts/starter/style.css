@@ -19,6 +19,11 @@ img {
     vertical-align: middle;
 }
 
+::selection {
+    color: #fff;
+    background-color: rgb(247, 185, 185);
+}
+
 .inner {
     width: 88%;
     max-width: 1170px;
@@ -26,8 +31,40 @@ img {
     margin-left: auto;
 }
 
-a:hover {
-    color: #f00;
+a:hover,
+.current {
+    color: #E40065;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h2::before {
+    content: "";
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.news h2::before {
+    content: "NEWS";
+}
+
+.works h2::before {
+    content: "WORKS";
+}
+
+.voice h2::before {
+    content: "VOICE";
+}
+
+h2::after {
+    content: "";
 }
 
 /* header
@@ -74,12 +111,20 @@ header .inner {
     align-items: center;
     column-gap: 40px;
     padding: 25px;
-    background-color: #ddd;
 }
 
 .news-item dt {
     font-weight: bold;
 }
+
+.news-item:nth-child(even) {
+    background-color: #F7F7F7;
+}
+
+/* p::first-letter {
+    color: #f00;
+    font-size: 24px;
+} */
 
 /* * {
     margin-bottom: 200px;
