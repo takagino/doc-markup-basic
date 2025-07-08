@@ -152,6 +152,20 @@ header .inner {
     font-weight: bold;
 }
 
+/* voice */
+.voice article {
+    display: grid;
+    grid-template-columns: 400fr 700fr;
+    align-items: center;
+    column-gap: 70px;
+}
+
+.voice .text {
+    padding: 50px;
+    border-radius: 30px;
+    background-color: #F7F7F7;
+}
+
 /* p::first-letter {
     color: #f00;
     font-size: 24px;
