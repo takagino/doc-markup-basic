@@ -160,10 +160,38 @@ header .inner {
     column-gap: 70px;
 }
 
+.voice img {}
+
 .voice .text {
     padding: 50px;
     border-radius: 30px;
     background-color: #F7F7F7;
+    position: relative;
+}
+
+.voice .text::after {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    content: "";
+    display: inline-block;
+    border: 15px solid transparent;
+    border-right-color: #F7F7F7;
+}
+
+.voice-list article:nth-child(2n) {
+    grid-template-columns: 700fr 400fr;
+}
+
+.voice-list article:nth-child(2n) img {
+    order: 2;
+}
+
+.voice-list article:nth-child(2n) .text::after {
+    left: auto;
+    right: -30px;
+    border-right-color: transparent;
+    border-left-color: #F7F7F7;
 }
 
 /* p::first-letter {
@@ -183,3 +211,9 @@ small {
 /* .works .inner>p {
     color: #f00;
 } */
+
+.triangle {
+    width: 100px;
+    border: 50px solid transparent;
+    border-left-color: #f00;
+}
