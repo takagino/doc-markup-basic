@@ -176,6 +176,7 @@ header .inner {
     content: "";
     display: inline-block;
     border: 15px solid transparent;
+    /* transparent（透明）*/
     border-right-color: #F7F7F7;
 }
 
@@ -185,10 +186,15 @@ header .inner {
 
 .voice-list article:nth-child(2n) img {
     order: 2;
+    /*
+    順番を入れ替える。数字が大きいほど下にくる
+    flexbox、Gridレイアウトの子要素にしか効かない
+    */
 }
 
 .voice-list article:nth-child(2n) .text::after {
     left: auto;
+    /* left と right は同時に指定できないので、left を初期値に戻す */
     right: -30px;
     border-right-color: transparent;
     border-left-color: #F7F7F7;
