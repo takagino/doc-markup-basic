@@ -194,24 +194,7 @@ header .inner {
     border-left-color: #F7F7F7;
 }
 
-/* p::first-letter {
-    color: #f00;
-    font-size: 24px;
-} */
-
-/* * {
-    margin-bottom: 200px;
-} */
-
-/* h2,
-small {
-    color: #f00;
-} */
-
-/* .works .inner>p {
-    color: #f00;
-} */
-
+/* 三角形の作り方 */
 .triangle {
     width: 100px;
     border: 50px solid transparent;
